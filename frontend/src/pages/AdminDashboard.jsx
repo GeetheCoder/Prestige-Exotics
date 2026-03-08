@@ -1,36 +1,30 @@
-import { Link } from "react-router-dom"
+import Sidebar from "../components/Sidebar"
 
-export default function AdminDashboard(){
+export default function AdminDashboard() {
 
-  return(
+  return (
 
     <div className="flex">
 
-      <aside className="w-64 bg-gray-900 text-white p-6">
+      <Sidebar/>
 
-        <Link to="/admin/dashboard">Dashboard</Link>
+      <main className="p-10 w-full">
 
-        <Link to="/admin/vehicles" className="block mt-4">
-          Vehicles
-        </Link>
-
-      </aside>
-
-      <main className="p-10">
-
-        <h1 className="text-3xl mb-6">Dashboard</h1>
+        <h1 className="text-3xl font-bold mb-6">
+          Dashboard
+        </h1>
 
         <div className="grid grid-cols-3 gap-6">
 
-          <div className="border p-6">
+          <div className="bg-white shadow p-6 rounded">
             Total Vehicles
           </div>
 
-          <div className="border p-6">
+          <div className="bg-white shadow p-6 rounded">
             Available
           </div>
 
-          <div className="border p-6">
+          <div className="bg-white shadow p-6 rounded">
             Sold
           </div>
 
@@ -41,4 +35,5 @@ export default function AdminDashboard(){
     </div>
 
   )
+
 }

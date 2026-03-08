@@ -1,3 +1,4 @@
+import Sidebar from "../components/Sidebar"
 import { useEffect,useState } from "react"
 
 export default function AdminVehicles(){
@@ -14,36 +15,54 @@ export default function AdminVehicles(){
 
   return(
 
-    <div>
+    <div className="flex">
 
-      <h1 className="text-3xl p-6">Manage Vehicles</h1>
+      <Sidebar/>
 
-      <table className="w-full">
+      <main className="p-10 w-full">
 
-        <thead>
-          <tr>
-            <th>Make</th>
-            <th>Model</th>
-            <th>Year</th>
-            <th>Price</th>
-          </tr>
-        </thead>
+        <h1 className="text-3xl mb-6">
+          Manage Vehicles
+        </h1>
 
-        <tbody>
+        <table className="w-full border">
 
-        {cars.map(car=>(
-          <tr key={car.id}>
-            <td>{car.make}</td>
-            <td>{car.model}</td>
-            <td>{car.year}</td>
-            <td>${car.price}</td>
-          </tr>
-        ))}
+          <thead>
 
-        </tbody>
+            <tr className="bg-gray-200">
 
-      </table>
+              <th>Make</th>
+              <th>Model</th>
+              <th>Year</th>
+              <th>Price</th>
+
+            </tr>
+
+          </thead>
+
+          <tbody>
+
+            {cars.map(car=>(
+
+              <tr key={car.id}>
+
+                <td>{car.make}</td>
+                <td>{car.model}</td>
+                <td>{car.year}</td>
+                <td>${car.price}</td>
+
+              </tr>
+
+            ))}
+
+          </tbody>
+
+        </table>
+
+      </main>
 
     </div>
+
   )
+
 }

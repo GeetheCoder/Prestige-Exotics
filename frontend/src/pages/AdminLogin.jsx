@@ -19,9 +19,11 @@ export default function AdminLogin(){
 
     <div className="flex justify-center items-center h-screen">
 
-      <form onSubmit={login} className="border p-8 rounded">
+      <form onSubmit={login} className="bg-white p-8 shadow rounded">
 
-        <h1 className="text-2xl mb-6">Admin Login</h1>
+        <h1 className="text-2xl mb-6">
+          Admin Login
+        </h1>
 
         <input
           placeholder="Username"
@@ -43,5 +45,7 @@ export default function AdminLogin(){
       </form>
 
     </div>
+
   )
+
 }
