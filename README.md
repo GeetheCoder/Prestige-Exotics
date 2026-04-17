@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Prestige Exotics - Exotic Car Inventory System
 
 Prestige Exotics is a full-stack exotic car inventory web application. The project allows users to view available exotic vehicles and allows an admin to manage the vehicle inventory through a protected admin dashboard.
@@ -12,7 +12,7 @@ Prestige Exotics is a full-stack exotic car inventory web application. The proje
 - Admin dashboard
 - Add new vehicles
 - View and manage existing vehicles
-<<<<<<< HEAD
+
 - Upload and display vehicle images
 - React/Vite frontend
 =======
