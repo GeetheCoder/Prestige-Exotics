@@ -12,16 +12,10 @@ public class Car {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(unique = true)
-    private String vin;
-
     private String make;
     private String model;
     private int year;
-    private String color;
-    private int mileage;
     private double price;
-    private String transmission;
-    private String engine;
+    private String image;
     private String status;
 }

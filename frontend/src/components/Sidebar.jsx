@@ -1,24 +1,51 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate, useLocation } from "react-router-dom"
 
-export default function Sidebar() {
+export default function Sidebar(){
 
-  return (
+  const navigate = useNavigate()
+  const location = useLocation()
 
-    <aside className="w-64 bg-black text-white min-h-screen p-6">
+  function handleLogout(){
+    localStorage.removeItem("isAdminLoggedIn")
+    localStorage.removeItem("adminRole")
+    navigate("/admin/login")
+  }
 
-      <h2 className="text-xl font-bold mb-6">
+  const linkClass = (path) =>
+    `block px-4 py-3 rounded-lg transition ${
+      location.pathname === path
+        ? "bg-red-600 text-white"
+        : "bg-zinc-900 text-zinc-300 hover:bg-zinc-800 hover:text-white"
+    }`
+
+  return(
+
+    <aside className="w-64 min-h-screen bg-black border-r border-zinc-800 p-6 text-white">
+
+      <h2 className="text-2xl font-bold mb-8">
         Admin Panel
       </h2>
 
-      <nav className="space-y-4">
+      <nav className="space-y-3">
 
-        <Link to="/admin/dashboard">
+        <Link to="/admin/dashboard" className={linkClass("/admin/dashboard")}>
           Dashboard
         </Link>
 
-        <Link to="/admin/vehicles">
-          Vehicles
+        <Link to="/admin/vehicles" className={linkClass("/admin/vehicles")}>
+          Manage Vehicles
         </Link>
+
+        <Link to="/admin/add-vehicle" className={linkClass("/admin/add-vehicle")}>
+          Add Vehicle
+        </Link>
+
+        <button
+          onClick={handleLogout}
+          className="block w-full text-left px-4 py-3 rounded-lg bg-zinc-900 text-zinc-300 hover:bg-red-700 hover:text-white transition"
+        >
+          Log Out
+        </button>
 
       </nav>
 

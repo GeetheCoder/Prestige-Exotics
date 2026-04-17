@@ -1,0 +1,14 @@
+@import "./theme.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slick-dots li button:before {
+  color: white;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: white;
+}
