@@ -4,7 +4,6 @@
 Prestige Exotics is a full-stack exotic car inventory web application. The project allows users to view available exotic vehicles and allows an admin to manage the vehicle inventory through a protected admin dashboard.
 =======
 Prestige Exotics is a full-stack exotic car inventory web application. The project allows users to view available exotic vehicles and allows an admin to manage the vehicle inventory.
->>>>>>> 575b1336f494cf87892081edaa1bfc558adc3033
 
 ## Project Features
 
@@ -19,7 +18,6 @@ Prestige Exotics is a full-stack exotic car inventory web application. The proje
 =======
 - Upload/display vehicle images
 - React frontend
->>>>>>> 575b1336f494cf87892081edaa1bfc558adc3033
 - Spring Boot backend
 - MySQL database connection
 
@@ -31,7 +29,7 @@ exotic-car-inventory/
 |
 =======
 │
->>>>>>> 575b1336f494cf87892081edaa1bfc558adc3033
+
 ├── frontend/                 # React/Vite frontend
 │   ├── src/
 │   ├── package.json
@@ -40,7 +38,7 @@ exotic-car-inventory/
 |
 =======
 │
->>>>>>> 575b1336f494cf87892081edaa1bfc558adc3033
+
 ├── src/                      # Spring Boot backend source code
 │   └── main/
 │       ├── java/
@@ -49,7 +47,7 @@ exotic-car-inventory/
 |
 =======
 │
->>>>>>> 575b1336f494cf87892081edaa1bfc558adc3033
+
 ├── pom.xml                   # Maven/Spring Boot configuration
 ├── mvnw                      # Maven wrapper
 ├── .gitignore
@@ -331,4 +329,4 @@ yarn-error.log*
 
 Created by George Mays.
 =======
->>>>>>> 575b1336f494cf87892081edaa1bfc558adc3033
+>>>>>>> 
