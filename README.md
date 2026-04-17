@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 # Prestige Exotics - Exotic Car Inventory System
 
 Prestige Exotics is a full-stack exotic car inventory web application. The project allows users to view available exotic vehicles and allows an admin to manage the vehicle inventory through a protected admin dashboard.
+=======
+Prestige Exotics is a full-stack exotic car inventory web application. The project allows users to view available exotic vehicles and allows an admin to manage the vehicle inventory.
+>>>>>>> 575b1336f494cf87892081edaa1bfc558adc3033
 
 ## Project Features
 
@@ -9,8 +13,13 @@ Prestige Exotics is a full-stack exotic car inventory web application. The proje
 - Admin dashboard
 - Add new vehicles
 - View and manage existing vehicles
+<<<<<<< HEAD
 - Upload and display vehicle images
 - React/Vite frontend
+=======
+- Upload/display vehicle images
+- React frontend
+>>>>>>> 575b1336f494cf87892081edaa1bfc558adc3033
 - Spring Boot backend
 - MySQL database connection
 
@@ -18,21 +27,34 @@ Prestige Exotics is a full-stack exotic car inventory web application. The proje
 
 ```text
 exotic-car-inventory/
+<<<<<<< HEAD
 |
+=======
+│
+>>>>>>> 575b1336f494cf87892081edaa1bfc558adc3033
 ├── frontend/                 # React/Vite frontend
 │   ├── src/
 │   ├── package.json
 │   └── vite.config.js
+<<<<<<< HEAD
 |
+=======
+│
+>>>>>>> 575b1336f494cf87892081edaa1bfc558adc3033
 ├── src/                      # Spring Boot backend source code
 │   └── main/
 │       ├── java/
 │       └── resources/
+<<<<<<< HEAD
 |
+=======
+│
+>>>>>>> 575b1336f494cf87892081edaa1bfc558adc3033
 ├── pom.xml                   # Maven/Spring Boot configuration
 ├── mvnw                      # Maven wrapper
 ├── .gitignore
 └── README.md
+<<<<<<< HEAD
 ```
 
 ## Requirements
@@ -308,3 +330,5 @@ yarn-error.log*
 ## Author
 
 Created by George Mays.
+=======
+>>>>>>> 575b1336f494cf87892081edaa1bfc558adc3033
