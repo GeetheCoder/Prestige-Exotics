@@ -1,0 +1,1 @@
+<Route path="/vehicle/:id" element={<VehicleDetail />} />
